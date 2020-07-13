@@ -1,0 +1,45 @@
+# Font configuration (changes require restart)
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: Hack
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Hack
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: Hack
+    # Style can be specified to pick a specific face.
+    style: Italic
+  size: 14
+  use_thin_strokes: true
+
+# Colors (One Half Light)
+colors:
+  primary:
+    background: '0xfafafa'
+    foreground: '0x383a42'
+  normal:
+    black: '0x000000'
+    red: '0xe45649'
+    green: '0x50a14f'
+    yellow: '0xc18401'
+    blue: '0x0184bc'
+    magenta: '0xa626a4'
+    cyan: '0x0997b3'
+    white: '0xC7C7C7'
+  bright:
+    black: '0x383a42'
+    red: '0xe45649'
+    green: '0x50a14f'
+    yellow: '0xc18401'
+    blue: '0x0184bc'
+    magenta: '0xa626a4'
+    cyan: '0x0997b3'
+    white: '0xfafafa'
