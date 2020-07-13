@@ -19,8 +19,9 @@ brew upgrade
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
 
-brew install fx fd jq ctags fzf ripgrep 
-brew install zsh tmux neovim htop 
+brew install zsh tmux neovim
+brew install bat htop wget
+brew install fx fd jq ctags fzf ripgrep
 brew install git go java11 python@3.8 
 brew install mysql kafka zookeeper redis wrk
 brew cask install alacritty
@@ -34,10 +35,12 @@ brew cleanup
 
 # install zimfw
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+mv -v ~/.zimrc ~/.zimrc.old 2> /dev/null
 ln -sf $BASE/zimrc ~/.zimrc
 
 # use zsh as default shell
 chsh -s $(which zsh)
+mv -v ~/.zshrc ~/.zshrc.old 2> /dev/null
 ln -sf $BASE/zshrc ~/.zshrc
 
 # }}} end shell config
