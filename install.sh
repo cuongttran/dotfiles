@@ -60,6 +60,8 @@ mkdir -p ~/.config/nvim
 ln -sf $BASE/vimrc ~/.config/nvim/init.vim
 ln -sf $BASE/config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
 
+nvim +PlugInstall +qall
+
 # bat
 ln -sf $BASE/config/bat/config ~/.config/bat/config 
 

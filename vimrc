@@ -12,24 +12,32 @@ set ts=4 sts=4 sw=4
 set number
 
 call plug#begin('~/.vim/plugged')
+
 Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'preservim/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
 Plug 'ap/vim-css-color'
-Plug 'majutsushi/tagbar'
-" Theme
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+
+" Themes {{{
 Plug 'itchyny/lightline.vim' 
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'jacoborus/tender.vim'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'ayu-theme/ayu-vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-one'
+Plug 'chiendo97/intellij.vim'
+" }}} End vim themes
+
 call plug#end()
 
 " let ayucolor="light"
